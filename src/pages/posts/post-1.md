@@ -1,3 +1,6 @@
+---
+---
+
 # Michael Sandel - Justice - Journal de lecture
 P1 ouragan charley et "prix abusifs" 
 P13  3 idees structurent arguments societaux : maximisation du bien être, garantie de la liberté, préserver la vertu
