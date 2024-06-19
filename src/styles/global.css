@@ -14,6 +14,7 @@ body {
   box-sizing: border-box;
 }
 
+
 .container{
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
@@ -25,19 +26,32 @@ body {
 .Header {display: flex; 
 flex-direction: row;
 justify-content: space-between;
+width :100%;
 /* Pourquoi le space between suffit pas à coller le bouton d'accueil et le nav sur les côtés ? */
 gap: 1em}
+
+  .Navigation{ font-size: 1.8em;
+text-decoration: none; 
+display : flex;
+flex-direction: row;
+justify-content: space-between;
+gap : 0.5em}
 
 .Presentation{display: flex; 
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap : 10em}
+  width : 100%;}
 /* Pourquoi la photo ne s'affiche pas ?*/
+.photo{
+  padding : 10em;
+  max-width : 40%;
+  margin-right: 5em;
+}
+  .helloworld{max-width: 60%;
+  padding: 2em}
 
-  .helloworld{max-width: 50em;
-  padding: 10em}
-  .Hey{font-size: 1.3em;}
+.Hey{font-size: 2.5em;}
 
 .portfolio{display: flex; 
   flex-direction: row;
@@ -61,12 +75,15 @@ background-color: pink;}
     justify-content: space-between;
     align-items: center;
     flex-wrap : wrap;
+    width:100%;
     }
 
-h1 {font-size: 3em; color:black}
+h1 {font-size: 5em; color:black}
 h2 {font-size: 2em; color:black}
 
 text {font-size :larger}
+
+
 /* Pour faire une gallerie plus tard
 .container {
   display: flex;
