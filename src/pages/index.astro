@@ -1,19 +1,63 @@
 ---
 
+import "../styles/global.css";
+import pix from "../assets/luffy.jpg"
+import {Image} from "astro:assets"
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />  
+		<!-- icone du tab -->
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>aprangere</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<h1>Blog Arman</h1>
-		<p>Salut ! C'est mon blog, c'est vraiment cool de pouvoir être sur internet comme ça</p>
-	</body>
+	<div class="container">
+		<div class="Header">
+			<div class="Homebutton"><a href="/">Arman Prangere</a></div>
+			<div class="Navigation">
+				<a href="/blog">Philo</a>
+				<a href="https://fr.wikipedia.org/wiki/Past%C3%A8que">kiwi</a>
+				<a href="https://fr.wikipedia.org/wiki/Past%C3%A8que">pasteque</a>
+			</div>
+		</div>
+		<div class="Presentation">
+			<div class="helloworld">
+				<h1>Hello World &#128513</h1> 
+				<p class="Hey">Hey, my name is Arman, I am a Philosophy student trying to build a website. Hope you'll find some things interesting &#128516
+				</p>
+			</div>
+			<div class="photo">
+				<Image src={pix} alt="mypicture"/>
+			</div>
+		</div>
+		<div class="section2">
+			<div class="Titresection"><h2>Here are some of my projects !</h2></div>
+			<div class="portfolio"> 
+				<div class="work">Projet1</div>
+				<div class="work">Projet2</div>
+				<div class="work">Projet3</div>
+				<div class="work">Projet4</div>
+				<div class="work">Projet5</div>
+				<div class="work">Projet6</div>
+				<div class="work">Projet7</div>
+				<div class="work">Projet8</div>
+				<div class="work">Projet9</div>
+			</div>
+		</div>
+		<div class="Footer">
+			<div class="Contactform"><h2>Contact me here</h2></div>
+			<div class="socials">
+				<div class="icone">icone 1</div>
+				<div class="icone">icone 2</div>
+				<div class="icone">icone 3</div>
+				<div class="icone">icone 4</div>
+			</div>
+			<div class="legal">Legal notice</div>
+		</div>
+	</div>
+	</body> 
 </html>

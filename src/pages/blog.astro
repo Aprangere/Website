@@ -1,4 +1,9 @@
-        
+---
+import "../styles/global.css"
+import Footer from "../Components/footer.astro";
+import Navigation from "../Components/navigation.astro";
+import Header from "../Components/header.astro";
+---
         
       
         <html lang="en">
@@ -9,16 +14,17 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
+    <Header/>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
-		<h1>Blog Arman</h1>
-        <h1>About Me</h1>
-        <p>Ici je prévois de mettre de la philo !</p>
+
+		<h1>Philo</h1>
+        <p>Ici vous trouverez des petits articles de philo / sciences sociales</p>
         <ul>
             <li><a href="/posts/post-1/">Des notes de lecture</a></li>
             <li><a href="/posts/post-2/">Un peu de philo de l'art</a></li>
             <li><a href="/posts/post-3/">Et des analyses de divers médium populaires (Films, Jeux vidéos)</a></li>
           </ul>
+    </body>  
+    <Footer/>
+    
 </html>

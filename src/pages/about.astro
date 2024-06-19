@@ -1,6 +1,8 @@
-
----
-const pageTitle = "About Me";
+--- 
+import "../styles/global.css";
+import Footer from "../Components/footer.astro";
+import Navigation from "../Components/navigation.astro";
+import Header from "../Components/header.astro"
 ---
 <html lang="en">
 	<head>
@@ -8,13 +10,13 @@ const pageTitle = "About Me";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>pageTitle</title>
+		<title>aprangere/about</title>
 	</head>
+	<Header/>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
-		<h1>Blog Arman</h1>
-        <h1>About Me</h1>
+		<h1>A propos de moi</h1>
+		<p>Lorem ipsum</p>
         <img src="https://i.pinimg.com/564x/79/d8/50/79d85017ceb58a2f4e6976bb6f7b771c.jpg" alt="Miaou">
+	</body>
+	<Footer/>
 </html>
