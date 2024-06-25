@@ -27,6 +27,7 @@ flex-direction: row;
 justify-content: space-between;
 width :100%;
 /* Pourquoi le space between suffit pas à coller le bouton d'accueil et le nav sur les côtés ? */
+/*Comment faire pour que le header se barre pas */
 gap: 1em}
 
 a{color : black;
@@ -89,6 +90,7 @@ background-color: pink;}
 .socials{display: flex; 
     flex-direction: row;
     justify-content: space-between;
+    /* Pareil pourquoi ça prends pas plus d'espace et pourquoi ils se collent ?? */
     align-items: center;
     flex-wrap : wrap;
     width : 100%;
