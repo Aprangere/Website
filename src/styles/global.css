@@ -6,13 +6,13 @@ body {
   padding: 5rem;
   line-height: 1.6;
   background-image: linear-gradient(white, lightsalmon);
-  color : black
+  color : black;
+  font-family: 'Barlow', sans-serif;
 }
 
 * {
   box-sizing: border-box;
 }
-
 
 .container{
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -29,12 +29,25 @@ width :100%;
 /* Pourquoi le space between suffit pas à coller le bouton d'accueil et le nav sur les côtés ? */
 gap: 1em}
 
+a{color : black;
+  text-decoration: none;
+  outline : none;}
+
+a:hover {
+    background: lightsalmon;
+    font-style: bold;
+    text-decoration : underline;
+  }
+
+  .Homebutton {font-size: 2.2em;
+  font-style: italic;}
   .Navigation{ font-size: 1.8em;
 text-decoration: none; 
 display : flex;
 flex-direction: row;
 justify-content: space-between;
-gap : 0.5em}
+gap : 0.5em;
+padding-right : 5px}
 
 .Presentation{display: flex; 
   flex-direction: row;
@@ -64,6 +77,10 @@ gap : 0.5em}
   height: 30em; 
 background-color: pink;}
 
+.article {width :30em;
+  height: 30em; 
+background-color: pink;}
+
 .footer{ display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -74,10 +91,21 @@ background-color: pink;}
     justify-content: space-between;
     align-items: center;
     flex-wrap : wrap;
+    width : 100%;
+    gap : 3px;
+
+
+img {
+      width : 50px;
+      height : 50px;
+      max-width : 70px;
+      max-height : 70px;}
     }
 
 h1 {font-size: 5em; color:black}
 h2 {font-size: 2em; color:black}
+h3 {font-size: 1.2em;
+  color : black;}
 
 text {font-size :larger}
 

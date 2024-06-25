@@ -1,8 +1,5 @@
 ---
-
-import "../styles/global.css";
-import pix from "../assets/luffy.jpg"
-import {Image} from "astro:assets"
+import "../styles/global.css"
 ---
 
 <html lang="en">
@@ -27,22 +24,12 @@ import {Image} from "astro:assets"
 				<a href="https://fr.wikipedia.org/wiki/Past%C3%A8que">Pasteque</a>
 			</div>
 		</div>
-		<div class="Presentation">
-			<div class="helloworld">
-				<h1>Hello World &#128513</h1> 
-				<p class="Hey">Hey, my name is Arman, I am a Philosophy student trying to build a website. Hope you'll find some things interesting &#128516
-				</p>
-			</div>
-			<div class="photo">
-				<Image src={pix} alt="mypicture" height={380} width={380}/>
-			</div>
-		</div>
 		<div class="section2">
-			<div class="Titresection"><h2>Here are some of my projects !</h2></div>
+			<div class="Titresection"><h2>Have a look at some articles !</h2></div>
 			<div class="portfolio"> 
-				<div class="work"> <h3>Projet1</h3></div>
-				<div class="work"><h3>Projet2</h3></div>
-				<div class="work"><h3>Projet3</h3></div>
+				<div class="article"> <a href="/articles/a.md">Nietzsche</a></div>
+				<div class="article"> <a href=""></div>
+				<div class="article">Projet3</div>
 			</div>
 		</div>
 		<div class="Footer">
