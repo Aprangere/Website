@@ -129,60 +129,17 @@ z-index : 2;}
 
 text {font-size :larger}
 
-
-/* Pour faire une gallerie plus tard
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: baseline; 
-	flex-wrap: wrap;
-	align-content: flex-start;
-  gap : 1em
+.blogheader{display: flex;
+flex-direction: column;
+justify-content: baseline;
+align-items: center;
+width : 100%;
 }
+/* Pourquoi ça ne me les centre pas */
+/*Pourquoi un espace dégueu entre titre et date */
+/*Pourquoi mon footer est pété dans les pages de blog ?*/
 
-
- 
-  footer{ position:absolute; bottom:0; width:100%; padding-top:50px; height:50px; }
-  
-  text{color : white;}
-
-  body {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 80ch;
-    padding: 1rem;
-    line-height: 1.5;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  h1 {
-    margin: 1rem 0;
-    font-size: 2.5rem;
-  }
-
-
-
-
-  
-  .expanded {
-    display: unset;
-  }
-  
-  @media screen and (min-width: 636px) {
-    .nav-links {
-      margin-left: 5em;
-      display: block;
-      position: static;
-      width: auto;
-      background: none;
-    }
-  
-    .nav-links a {
-      display: inline-block;
-      padding: 15px 20px;
-    }
-  } */
+.content{padding : 2em;
+max-width: 100% ;
+font-size :1.4em; 
+text-align: justify;}

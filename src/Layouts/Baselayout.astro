@@ -2,7 +2,7 @@
 import "../styles/global.css";
 import Header from "../Components/header.astro"
 import Footer from "../Components/footer.astro";
-const {pageTitle} = Astro.props;
+const {pagetitle} = Astro.props;
 ---
 <html lang="en">
   <head>
@@ -14,7 +14,7 @@ const {pageTitle} = Astro.props;
 		<!-- icone du tab -->
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
+		<title>{pagetitle}</title>
   </head>
   <body>
     <div class="container">
