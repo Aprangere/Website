@@ -1,0 +1,44 @@
+---
+import zao from "../assets/couvertures/zao.png";
+import hara from "../assets/couvertures/hara.jpg";
+import dos from "../assets/couvertures/dostoievski.png"
+import libet from "../assets/couvertures/libet.jpg"
+import kupka from "../assets/couvertures/kupka.jpeg"
+import {Image} from "astro:assets";
+---
+
+<div class="section2">
+    <div class="Titresection"><h2>Have a look at some articles !</h2> <input type="text" placeholder="Chercher un mot-clé" id="keyword" size="60" style="height:25px"/></div>
+    <div class="portfolio"> 
+        <a href="/posts/post-1/"> 
+            <div class="work" > 
+                <Image src={zao} alt="peinture_zao" />
+                <h3>Le devenir dionysiaque de la peinture</h3>
+            </div>
+        </a>
+        <a href="/posts/post-2/"> 
+            <div class="work" > 
+                <Image src={hara} alt="photo_hara" />
+                <h3>Que veut dire "être du même monde" ?</h3>
+            </div>
+        </a>
+        <a href="/posts/post-3/"> 
+            <div class="work" > 
+                <Image src={dos} alt="Fedor Dostoïevski"/>
+                <h3>Le crime est-il son propre châtiment ?</h3>
+            </div>
+        </a> 
+        <a href="/posts/post-4/"> 
+            <div class="work" > 
+                <Image src={libet} alt="Benjamin Libet"/>
+                <h3>Le déterminisme exclut-il toute liberté ?</h3>
+            </div>
+        </a> 
+        <a href="/posts/post-5/"> 
+            <div class="work" > 
+                <Image src={kupka} alt="traits_et_profondeurs"/>
+                <h3>Quelle différence entre organisme et mécanisme ?</h3>
+            </div>
+        </a> 
+    </div>
+</div>

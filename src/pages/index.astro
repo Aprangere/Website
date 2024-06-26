@@ -1,37 +1,16 @@
 ---
 
-import "../styles/global.css";
-import pix from "../assets/luffy.jpg"
-import {Image} from "astro:assets"
+import Baselayout from "../Layouts/Baselayout.astro";
+import pix from "../assets/luffy.jpg";
+import {Image} from "astro:assets";
+const pageTitle = "Home Page"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" /> 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
-		<!-- icone du tab -->
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>aprangere</title>
-	</head>
-	<body>
-	<div class="container">
-		<div class="Header">
-			<div class="Homebutton"><a href="/">Arman Prangere</a></div>
-			<div class="Navigation">
-				<a href="/philo">Philo</a>
-				<a href="/musique">Musique</a>
-				<a href="https://fr.wikipedia.org/wiki/Past%C3%A8que">Pasteque</a>
-			</div>
-		</div>
+<Baselayout>
 		<div class="Presentation">
 			<div class="helloworld">
 				<h1>Hello World &#128513</h1> 
-				<p class="Hey">Hey, my name is Arman, I am a Philosophy student trying to build a website. Hope you'll find some things interesting &#128516
-				</p>
+				<p class="Hey">Hey, my name is Arman, I am a Philosophy student trying to build a website. Hope you'll find some things interesting &#128516</p>
 			</div>
 			<div class="photo">
 				<Image src={pix} alt="mypicture" height={380} width={380}/>
@@ -40,42 +19,14 @@ import {Image} from "astro:assets"
 		<div class="section2">
 			<div class="Titresection"><h2>Here are some of my projects !</h2></div>
 			<div class="portfolio"> 
-				<div class="work"> <h3>Projet1</h3></div>
+					<a href="/"> 
+						<div class="work"> 
+							<img src="website.png" alt="photo_du_code">
+							<h3>Coder ce site &#128521</h3>
+						</div>
+					</a>
 				<div class="work"><h3>Projet2</h3></div>
 				<div class="work"><h3>Projet3</h3></div>
 			</div>
 		</div>
-		<div class="Footer">
-			<div class="Contactform"><h2>Find me here</h2></div>
-			<div class="socials">
-				<div class="icone">
-					<a href="https://www.youtube.com/channel/UCMVDLO_ZwXU5ZshIUeYPVpA">
-						<img src="yt.png" alt="icone_youtube" />
-					</a>
-				</div>
-				<div class="icone">
-					<a href="https://www.linkedin.com/in/arman-prangere-%F0%9F%8C%92-1224791a6">
-						<img src="linkedin.png" alt="icone_linkedin">
-					</a>
-				</div>
-				<div class="icone">
-					<a href="">
-						<img src="insta.png" alt="icone_insta">
-					</a>
-				</div>
-				<div class="icone">
-					<a href="">
-						<img src="mail.png" alt="icone_mail">
-					</a>
-				</div>
-				<div class="icone">
-					<a href="">
-						<img src="pinterest.png" alt="pinterest">
-					</a>
-				</div>
-			</div>
-			<div class="legal">Arman Prangere 2024</div>
-		</div>
-	</div>
-	</body> 
-</html>
+	</Baselayout>

@@ -1,0 +1,60 @@
+---
+import "../styles/global.css"
+import Header from "../Components/header.astro"
+import Footer from "../Components/footer.astro"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" /> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+		<!-- icone du tab -->
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>aprangere</title>
+	</head>
+	<body>
+	<div class="container">
+		<Header />
+		<div class="section2">
+			<div class="Titresection"><h2>Have a look at some articles !</h2> <input type="text" placeholder="Chercher un mot-clé" id="keyword" size="60" style="height:25px"/></div>
+			<div class="portfolio"> 
+				<a href="/posts/post-1/"> 
+					<div class="work" > 
+						<img src="zao.png" alt="peinture_zao">
+						<h3>Le devenir dionysiaque de la peinture</h3>
+                	</div>
+				</a>
+                <a href="/posts/post-2/"> 
+					<div class="work" > 
+						<img src="hara.jpg" alt="photo_hara">
+                    	<h3>Que veut dire "être du même monde" ?</h3>
+					</div>
+				</a>
+                <a href="/posts/post-3/"> 
+					<div class="work" > 
+						<img src="dostoievski.png" alt="Fedor Dostoïevski">
+						<h3>Le crime est-il son propre châtiment ?</h3>
+					</div>
+				</a> 
+				<a href="/posts/post-4/"> 
+					<div class="work" > 
+						<img src="libet.jpg" alt="Benjamin Libet">
+						<h3>Le déterminisme exclut-il toute liberté ?</h3>
+					</div>
+				</a> 
+				<a href="/posts/post-5/"> 
+					<div class="work" > 
+						<img src="kupka.jpeg" alt="traits_et_profondeurs">
+						<h3>Quelle différence entre organisme et mécanisme ?</h3>
+					</div>
+				</a> 
+			</div>
+		</div>
+		<Footer />
+	</div>
+	</body> 
+</html>

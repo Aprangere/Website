@@ -1,22 +1,28 @@
---- 
-import "../styles/global.css";
-import Footer from "../Components/footer.astro";
-import Navigation from "../Components/navigation.astro";
-import Header from "../Components/header.astro"
 ---
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>aprangere/about</title>
-	</head>
-	<Header/>
-	<body>
-		<h1>A propos de moi</h1>
-		<p>Lorem ipsum</p>
-        <img src="https://i.pinimg.com/564x/79/d8/50/79d85017ceb58a2f4e6976bb6f7b771c.jpg" alt="Miaou">
-	</body>
-	<Footer/>
-</html>
+import Baselayout from "../Layouts/Baselayout.astro"
+const pageTitle = "Musique"
+---
+
+<Baselayout>
+		<div class="section2">
+			<div class="Titresection"><h2>Here are some of my songs</h2></div>
+			<div class="portfolio-vertical"> 
+				<figure>
+					<figcaption>Son 1</figcaption>
+					<audio controls src="Sweet_rain.mp3"></audio>
+				</figure>
+				<figure>
+					<figcaption>Son 2</figcaption>
+					<audio controls src="androidjapan.mp3"></audio>
+				</figure>
+				<figure>
+					<figcaption>Son 2</figcaption>
+					<audio controls src="androidjapan.mp3"></audio>
+				</figure>
+				<figure>
+					<figcaption>Son 2</figcaption>
+					<audio controls src="androidjapan.mp3"></audio>
+				</figure>
+			</div>
+		</div>
+	</Baselayout>
