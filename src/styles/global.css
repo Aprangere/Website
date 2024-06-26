@@ -32,7 +32,8 @@ gap: 1em}
 
 a{color : black;
   text-decoration: none;
-  outline : none;}
+  outline : none;
+  font-style : bold;}
 
 a:hover {
     background: lightsalmon;
@@ -95,10 +96,14 @@ padding-right : 5px}
 background-color: pink;
 display : inline-block; 
 position : relative}
+
 .work img{width : 100%;
 height: 100%;
 object-fit: cover;}
+.fill_foncé{background-color: black/75;inset: 0;}
+.titre_projet{position : absolute; top : 2px; left : 4px; color:white}
 
+.espace {height:6rem}
 
 .footer{ display: flex;
   flex-direction: column;
@@ -135,11 +140,16 @@ justify-content: baseline;
 align-items: center;
 width : 100%;
 }
-/* Pourquoi ça ne me les centre pas */
-/*Pourquoi un espace dégueu entre titre et date */
-/*Pourquoi mon footer est pété dans les pages de blog ?*/
 
-.content{padding : 2em;
+.couverture{ height :40em; width :40em; background-color: pink;
+display : inline-block; 
+position : relative}
+
+.couverture img{width : 100%;
+  height: 100%;
+  object-fit: cover;}
+
+.content{padding : 3em;
 max-width: 100% ;
-font-size :1.4em; 
+font-size :1.6em; 
 text-align: justify;}

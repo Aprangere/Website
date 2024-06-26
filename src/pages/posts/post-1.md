@@ -4,8 +4,8 @@ title: Philosophie du kiwi
 Date: 26/06/2024
 author: Arman
 image:
-  src: "/assets/couvertures/libet.jpg"
-  alt: "caca"
+  src: "/zao.png"
+  alt: "Zao"
 ---
 
 ## Nietzsche NT, §6
