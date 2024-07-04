@@ -1,11 +1,11 @@
 
+html{background-image: linear-gradient(white, lightsalmon);}
 body {
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
   padding: 5rem;
   line-height: 1.6;
-  background-image: linear-gradient(white, lightsalmon);
   color : black;
   font-family: 'Barlow', sans-serif;
 }
@@ -153,3 +153,8 @@ position : relative}
 max-width: 100% ;
 font-size :1.6em; 
 text-align: justify;}
+
+.illustration {font-style: italic;
+max-width: 100%;}
+
+figcaption{font-size: 1em;}

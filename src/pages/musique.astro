@@ -1,23 +1,18 @@
 ---
 import Baselayout from "../Layouts/Baselayout.astro"
 const pagetitle = "Musique"
+import { Image } from "astro:assets";
+import mwa from "../assets/luffy.jpg"
 ---
 
 <Baselayout>
+	<div class="Presentation">
 		<div class="section2">
-			<div class="Titresection"><h2>Here are some of my songs</h2></div>
+			<div class="Titresection"><h2>Quelques uns de mes morceaux</h2></div>
 			<div class="portfolio-vertical"> 
 				<figure>
-					<figcaption>Son 1</figcaption>
+					<figcaption>Sweet rain</figcaption>
 					<audio controls src="Sweet_rain.mp3"></audio>
-				</figure>
-				<figure>
-					<figcaption>Son 2</figcaption>
-					<audio controls src="androidjapan.mp3"></audio>
-				</figure>
-				<figure>
-					<figcaption>Son 2</figcaption>
-					<audio controls src="androidjapan.mp3"></audio>
 				</figure>
 				<figure>
 					<figcaption>Son 2</figcaption>
@@ -25,4 +20,9 @@ const pagetitle = "Musique"
 				</figure>
 			</div>
 		</div>
+		<!-- <div class="photo">
+			<Image src={mwa} alt="mypicture" height={380} width={380}/>
+			<p>Photo</p>
+		</div>-->
+	</div>
 	</Baselayout>
