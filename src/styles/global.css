@@ -151,6 +151,7 @@ position : relative}
 
 .content{padding : 3em;
 max-width: 100% ;
+min-width : 100%;
 font-size :1.6em; 
 text-align: justify;}
 
